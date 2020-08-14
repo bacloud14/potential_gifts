@@ -1,0 +1,24 @@
+{
+  "name": "potential_gifts",
+  "version": "1.0.0",
+  "description": "A MYSQL database for virtual gifts. It can be used as a model for games or even for serious wishlist apps.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bacloud14/potential_gifts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bacloud14/potential_gifts/issues"
+  },
+  "homepage": "https://github.com/bacloud14/potential_gifts#readme",
+  "dependencies": {
+    "mysql2": "^2.1.0",
+    "sequelize": "^6.3.4",
+    "sequelize-auto": "^0.5.3"
+  }
+}
