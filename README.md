@@ -3,11 +3,11 @@ A MYSQL database for virtual gifts. It can be used as a model for games or even 
 
 ### Initial dumb model
 
-![alt text](https://github.com/bacloud14/potential_gifts/raw/master/data_model.PNG)
+![alt text](https://github.com/bacloud14/potential_gifts/raw/master/data_model2.PNG)
 
 ### DB
 
-https://github.com/bacloud14/potential_gifts/raw/master/db.sql
+https://github.com/bacloud14/potential_gifts/raw/master/db2.sql
 
 #### Fields
 
