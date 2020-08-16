@@ -34,9 +34,10 @@ https://github.com/bacloud14/potential_gifts/raw/master/db.sql
 
 user is just a subscribed user (technically for loggin but also for gaming).
 
-##### possession
+##### possession and wishlist
 
 a possession is a one to many link so that a user can have many assets. Each entry is labeled by time to indicate the time of possessing an asset.
+possessions and wishlists are the same for now, maybe not later.
 
 ##### Note:
 
