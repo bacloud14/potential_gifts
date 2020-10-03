@@ -47,7 +47,23 @@ This is just my 0-version immagination of it, please feel free to open an issue 
 
 https://github.com/bacloud14/potential_gifts/raw/master/dump.sql
 
+### NodeJS API
 
+Building a small NodeJS API around the database in order to fetch items from the DB more easily.
+
+#### Current APIs
+- /status
+  - Returns a JSON object with the status of the server
+- /version
+  - Returns a JSON object with the currently running version of the API
+
+### How Do I Use This?
+- Clone this repo
+- In the root directory run `npm install`
+- When the install is completed run `npm run start`
+- Point your browser to http://127.0.0.1:8080/status
+- You should see that the server status is reporting live
+- Use Postman or any other API tool to hit the API's listed in the [NodeJS API](#nodejs-api) section above
 
 ### todo
 
