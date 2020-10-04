@@ -6,6 +6,9 @@
 'use strict';
 console.time('boot time');
 
+// dotenv require
+require('dotenv').config();
+
 const port = process.env.PORT || 8080;
 const host = process.env.HOST || 'http://127.0.0.1';
 
@@ -81,7 +84,7 @@ app.use('/version', (req, res, next) => {
   return next();
 });
 
-// app.use('/services', require('./services/services.js'));
+app.use('/', require('./services/services.js'));
 //END NON-STATIC ROUTES
 
 

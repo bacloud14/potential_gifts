@@ -56,14 +56,43 @@ Building a small NodeJS API around the database in order to fetch items from the
   - Returns a JSON object with the status of the server
 - /version
   - Returns a JSON object with the currently running version of the API
+- /assets
+  - Returns an array of JSON objects each elements represents an asset from the database
+  - Will return the same number of assets that exist in the database
+- /assets/atomic
+  - Returns an array of JSON objects each elements represents an asset from the database
+  - Will return the same number of atomic assets that exist in the database
+- /assets/type/:type
+  - Returns an array of JSON objects each elements represents an asset from the database
+  - Will return the same number of assets with that type that exist in the database
 
 ### How Do I Use This?
 - Clone this repo
 - In the root directory run `npm install`
-- When the install is completed run `npm run start`
+- When the install is completed run `npm run start:dev`
 - Point your browser to http://127.0.0.1:8080/status
 - You should see that the server status is reporting live
 - Use Postman or any other API tool to hit the API's listed in the [NodeJS API](#nodejs-api) section above
+
+#### Your ENV File
+To run the application you need to have a `.env` file in your root directory. This `.env` file should contain the following data:
+
+```bash
+DB_HOST=your_host
+DB_USER=your_user
+DB_PASS=your_password
+DB_DATA=the_database
+DB_PORT=your_port
+```
+
+An example of this would be if I had a MySQL instance running `locally` on my machine on port `3306` with a username of `michael.scott` and the password `WillyWonka` which was using the database name `DunderMifflin`, the file contents would look like this:
+```bash
+DB_HOST=localhost
+DB_USER=michael.scott
+DB_PASS=WillyWonka
+DB_DATA=DunderMifflin
+DB_PORT=3306
+```
 
 ### todo
 
